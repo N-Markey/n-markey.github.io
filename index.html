@@ -35,6 +35,18 @@
             height: 1px;
             background-color: black; 
         }
+        .project {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .project .title {
+            text-align: left;
+            font-weight: bold;
+        }
+        .project .date {
+            text-align: right;
+        }
+
     </style>
 </head>
 <body>
@@ -49,15 +61,26 @@
         </section>
     </header>
     <main>
-        <section class="description">
+        <section class="intro">
             <p>Hello! I'm Nat. Thanks for visiting my website. I periodically post things that I made/wrote. </p>
         </section>
         <section class="projects">
             <h2>Projects</h2>
-            <p><a href="https://ctdatahaven.org/snapcuts" target="_blank" rel="noopener noreferrer"><b>Food Assistance and Local Economies at Risk</b></a> &nbsp &nbsp &nbsp October 19, 2025</p>
-            <p>
-                As a Research Assistant at <a href="https://ctdatahaven.org" target="_blank" rel="noopener noreferrer">DataHaven</a>, I analyzed the effect of federal budget cuts to SNAP (sometimes called food stamps) at the town and legislative district level in Connecticut. I used a simple model to calculate local impacts, visualized the results with R, researched the specific policy changes, and wrote up this report. I also wrote a <a href="https://ctdatahaven.org/report/understanding-how-snap-impacts-connecticut-communities-through-new-data-datahaven-and-state/" target="_blank" rel="noopener noreferrer">companion piece</a> explaining the available data on Connecticut SNAP impacts.
-            </p>
+            <table class="project">
+                <tr>
+                    <td class="title">
+                        <a href="https://ctdatahaven.org/snapcuts" target="_blank" rel="noopener noreferrer">Food Assistance and Local Economies at Risk</a>
+                    </td>
+                    <td class="date">October 19, 2025</td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <p> As a Research Assistant at <a href="https://ctdatahaven.org" target="_blank" rel="noopener noreferrer">DataHaven</a>, I analyzed the effect of federal budget cuts to SNAP (sometimes called food stamps) at the town and legislative district level in Connecticut. 
+                            I used a simple model to calculate local impacts, visualized the results with R, researched the specific policy changes, and wrote up this report. 
+                            I also wrote a <a href="https://ctdatahaven.org/report/understanding-how-snap-impacts-connecticut-communities-through-new-data-datahaven-and-state/" target="_blank" rel="noopener noreferrer">companion piece</a> explaining the available data on Connecticut SNAP impacts.</p>
+                    </td>
+                </tr>
+            </table>
             <hr>
             <a href="https://github.com/N-Markey/env_voting_jobs_data" target="_blank" rel="noopener noreferrer"><b>Environmental Voting, Jobs, and Polarization in the US House</b></a>
             <p>December 12, 2024</p>
